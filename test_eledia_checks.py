@@ -14,7 +14,7 @@ def test_generate_eledia_files_tree():
     x=generate_eledia_files_tree(os.getcwd() +'/data_files/suite2',y)
     test_data={1: [os.getcwd()+'/data_files/suite2/a.eledia'],
                2: [os.getcwd()+'/data_files/suite2/task1/c.eledia',
-                   os.getcwd()+'/data_files/suite2/task1/m.eledia'
+                   os.getcwd()+'/data_files/suite2/task1/m.eledia',
                    os.getcwd()+'/data_files/suite2/task1/f.eledia',
                   ],
                4: [os.getcwd()+'/data_files/suite2/task1/task2/task3/b.eledia']}
