@@ -1,0 +1,33 @@
+name: Python Test application(CI/CD)
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  PythonApp-check:
+
+    runs-on: ubuntu-latest
+   
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Setup Pipenv
+      run: pip install pipenv
+    - name: Install dependencies
+      run: |
+        pipenv install
+        
+
+    - name: Run Python Test      
+      run: |
+        pipenv run pytest
