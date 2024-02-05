@@ -22,6 +22,7 @@ def generate_eledia_files_tree(source_dir: str, eledia_file_paths: list):
         file_depth = len(file_path.split("/"))-source_folder_index
         if file_depth in tree_files:
             tree_files[file_depth].append(file_path)
+            tree_files.update({file_depth: sorted(tree_files[file_depth])})
         else:
             tree_files.update({file_depth: [file_path]})
     return tree_files
