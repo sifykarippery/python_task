@@ -17,9 +17,7 @@ def test_generate_eledia_files_tree():
                    os.getcwd()+'/data_files/suite2/task1/m.eledia',
                    os.getcwd()+'/data_files/suite2/task1/f.eledia',
                   ],
-               4: [os.getcwd()+'/data_files/suite2/task1/task2/task3/b.eledia']}
-    print(x)
-    print(test_data)
+               4: [os.getcwd()+'/data_files/suite2/task1/task2/task3/b.eledia']}    
     assert x==test_data
 
 def test_find_id_in_file():
