@@ -29,4 +29,4 @@ jobs:
         pipenv install --dev
     - name: Run Python Test      
       run: |
-        pipenv run test_eledia_checks.py
+        python run test_eledia_checks.py
