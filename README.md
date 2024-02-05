@@ -1,5 +1,8 @@
 # Coding Challenge
 
+[![Python Test application(CI/CD)](https://github.com/sifykarippery/python_task/actions/workflows/python_test.yml/badge.svg)](https://github.com/sifykarippery/python_task/actions/workflows/python_test.yml)
+
+
 ## 1. Problem
 A directory is given which can contain files and subdirectories. Subdirectories can also contain files and subdirectories.
 
