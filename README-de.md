@@ -77,7 +77,9 @@ pipenv run python main.py
 ```pytest```
 
 ## Anmerkung
+
 -Verwendet os.getcwd() zum einfacheren Testen
 
 ## 5. CI/CD (Continues Integration Testing)
-- - Konfigurierte CI/CD über Github-Aktion für Unit-Pytest bei jedem PR zum Hauptzweig
+
+- Konfigurierte CI/CD über Github-Aktion für Unit-Pytest bei jedem PR zum Hauptzweig
