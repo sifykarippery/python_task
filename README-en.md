@@ -82,4 +82,7 @@ pipenv run python main.py
 pytest
 ```
 ## Remark
--Used  os.getcwd() for easier testing
+- Used  os.getcwd() for easier testing
+
+## 5. CI/CD (Continues Integration Testing)
+- Configured CI/CD via github Action for unit pytest On every PR to main branch
